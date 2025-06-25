@@ -1,13 +1,14 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import Body from "./Components/Body/Body";
+import Header from "./Components/Header/Header";
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1>Framer Motion</h1>
+      <div className="overflow-hidden w-full">
+        <Header />
+        <Body />
+      </div>
     </>
   );
 }
